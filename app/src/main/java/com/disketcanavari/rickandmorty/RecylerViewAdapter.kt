@@ -37,10 +37,14 @@ class RecylerViewAdapter(val setOnClickinRecyler: SetOnClickinRecyler) : Recycle
 
 
             when(character.status){
-                "Alive" -> {}
-                "Dead" -> {}
+                "Alive" -> {
+                binding.circleView.circleColor = Color.GREEN
+                }
+                "Dead" -> {
+                    binding.circleView.circleColor = Color.RED
+                }
                 else->{
-
+                    binding.circleView.circleColor = Color.DKGRAY
                 }
 
             }
